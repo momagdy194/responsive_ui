@@ -1,8 +1,8 @@
 name: responsive_ui
 description: Responsive Ui with all componant.
 version: 0.0.1
-author: mohamed magdy<momagdy194@gmail.com>
-homepage: https://github.com/momagdy194
+author: mohamed magdy <momagdy194@gmail.com>
+homepage: https://github.com/momagdy194/responsive_ui
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

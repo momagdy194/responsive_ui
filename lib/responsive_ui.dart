@@ -15,7 +15,7 @@ class ResponsiveUi extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constrains) {
         var mediaQueryData = MediaQuery.of(context);
-        var deviceInfo = DeviceInfo(
+        var size = DeviceInfo(
           orientation: mediaQueryData.orientation,
           deviceType: getDeviceType(mediaQueryData),
           screenWidth: mediaQueryData.size.width,
@@ -32,7 +32,7 @@ class ResponsiveUi extends StatelessWidget {
           normalButton: mediaQueryData.size.width * .066,
           largeButton: mediaQueryData.size.width * .09,
         );
-        return builder(context, deviceInfo);
+        return builder(context, size);
       },
     );
   }
