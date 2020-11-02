@@ -16,17 +16,15 @@ A new Flutter package for android ,ios which help users toy make the ui ,ore res
 
 
 
-## Uses
+### How To Use It
+
+
+
+
 ["Example"](https://github.com/momagdy194/responsive_ui/blob/main/example/example.dart)
 
 
-
-
-
-
-
-
-*add the debendency to your  file.
+*add the dependencies to your file.
 
 ```yaml
   dependencies:
@@ -34,6 +32,8 @@ A new Flutter package for android ,ios which help users toy make the ui ,ore res
         sdk:
   responsive_ui:
 ```
+
+
 ```dart
 
 
@@ -50,21 +50,21 @@ class MyClass extends StatelessWidget {
     ResponsiveUi(builder: (context, size)=> /// that is my class i wrap my widget with it 
     
     ListView(children: [
-/// and you can controle in your widget with replace the 
-
+/// and you can  mange  the size in your widget with replace the 
+/// size.screenWidth or ech like that by  size.screenWidth or size.screenHeight
 and you can replace 
       Text('title',style: TextStyle(fontSize: size.screenWidth)),
       Text('title',style: TextStyle(fontSize: size.screenHeight)),
-      Text('title',style: TextStyle(fontSize: size.screenWidth*.067)),///titleText
-      Text('subTitle',style: TextStyle(fontSize: size.screenHeight*.04))///normal
+      Text('title',style: TextStyle(fontSize: size.titleText)),///titleText
+      Text('subtitel',style: TextStyle(fontSize: size.normalText))///normal
 
       ,Icon(Icons.error,size: size.normalIconSize)/// normal iconSize;
-      ,Icon(Icons.error,size: size.mediumIconSize,)///mediam iconSize;
+      ,Icon(Icons.error,size: size.mediumIconSize,)///medium iconSize;
       ,Icon(Icons.error,size: size.bigIconSize,)///big iconSize;
       ,
-      Container(height:size.normalButton,child: RaisedButton(onPressed: (){},child: Text("Normal Button",)))///normalbuttotn
+      Container(height:size.normalButton,child: RaisedButton(onPressed: (){},child: Text("Normal Button",)))///normalButton
       ,SizedBox(height: 15,)
-      ,  Container(height:size.largeButton,child: RaisedButton(onPressed: (){},child: Text("LargButton",)))///largebutton
+      ,  Container(height:size.largeButton,child: RaisedButton(onPressed: (){},child: Text("Larg Button",)))///largeButton
       ///
       ,Image(image: AssetImage("assets/images/userImage.png"),height:size.largeImage ,),///large image,
       Image(image: AssetImage("assets/images/userImage.png"),height:size.mediumImage ,),///medium image,
@@ -77,7 +77,6 @@ and you can replace
 }
 ```
 
-### How To Use It
 
 
 
