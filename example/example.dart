@@ -21,15 +21,15 @@ class MyClass extends StatelessWidget {
     return Scaffold(body: ResponsiveUi(builder: (context, size) =>ListView(children: [
 
       Text('title',style: TextStyle(fontSize: size.titleText)),///titleText
-      Text('subtitel',style: TextStyle(fontSize: size.normalText))///normal
+      Text('subTitle',style: TextStyle(fontSize: size.normalText))///normal
 
       ,Icon(Icons.error,size: size.normalIconSize)/// normal iconSize;
-      ,Icon(Icons.error,size: size.mediumIconSize,)///mediam iconSize;
+      ,Icon(Icons.error,size: size.mediumIconSize,)///medium iconSize;
       ,Icon(Icons.error,size: size.bigIconSize,)///big iconSize;
       ,
-      Container(height:size.normalButton,child: RaisedButton(onPressed: (){},child: Text("Normal Button",)))///normalbuttotn
+      Container(height:size.normalButton,child: RaisedButton(onPressed: (){},child: Text("Normal Button",)))///normalButtotn
       ,SizedBox(height: 15,)
-      ,  Container(height:size.largeButton,child: RaisedButton(onPressed: (){},child: Text("LargButton",)))///largebutton
+      ,  Container(height:size.largeButton,child: RaisedButton(onPressed: (){},child: Text("large Button",)))///largeButton
       ///
       ,Image(image: AssetImage("assets/images/userImage.png"),height:size.largeImage ,),///large image,
       Image(image: AssetImage("assets/images/userImage.png"),height:size.mediumImage ,),///medium image,

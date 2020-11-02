@@ -52,11 +52,11 @@ class MyClass extends StatelessWidget {
     ListView(children: [
 /// and you can  mange  the size in your widget with replace the 
 /// size.screenWidth or ech like that by  size.screenWidth or size.screenHeight
-and you can replace 
+///and you can replace 
       Text('title',style: TextStyle(fontSize: size.screenWidth)),
       Text('title',style: TextStyle(fontSize: size.screenHeight)),
       Text('title',style: TextStyle(fontSize: size.titleText)),///titleText
-      Text('subtitel',style: TextStyle(fontSize: size.normalText))///normal
+      Text('subTitle',style: TextStyle(fontSize: size.normalText))///normal
 
       ,Icon(Icons.error,size: size.normalIconSize)/// normal iconSize;
       ,Icon(Icons.error,size: size.mediumIconSize,)///medium iconSize;
@@ -64,8 +64,9 @@ and you can replace
       ,
       Container(height:size.normalButton,child: RaisedButton(onPressed: (){},child: Text("Normal Button",)))///normalButton
       ,SizedBox(height: 15,)
-      ,  Container(height:size.largeButton,child: RaisedButton(onPressed: (){},child: Text("Larg Button",)))///largeButton
-      ///
+      ,  Container(height:size.largeButton,child: RaisedButton(onPressed: (){},child: Text("Large Button",)))///largeButton
+
+
       ,Image(image: AssetImage("assets/images/userImage.png"),height:size.largeImage ,),///large image,
       Image(image: AssetImage("assets/images/userImage.png"),height:size.mediumImage ,),///medium image,
       Image(image: AssetImage("assets/images/userImage.png"),height:size.smallImage  ,),///small image,
